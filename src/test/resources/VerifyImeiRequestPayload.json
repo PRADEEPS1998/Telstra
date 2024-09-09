@@ -1,0 +1,9 @@
+{
+  "validationType": "PARTIAL",
+  "deviceDetails": {
+    "deviceId": "534603391402102",
+    "deviceType": "mobility",
+    "dateOfPurchase" : "12-12-2022",
+    "typeOfProof" : "WARRANTY_RECIEPT"
+  }
+}

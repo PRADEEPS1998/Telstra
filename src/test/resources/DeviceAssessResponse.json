@@ -1,0 +1,78 @@
+{
+  "statusCode": "200",
+  "time": 1658871015000,
+  "deviceAssessment": [
+    {
+      "deviceDetails": {
+        "deviceId": "534603391402102",
+        "productId": "100110075",
+        "deviceMake": "Apple",
+        "deviceModel": "iPhone 7 Series",
+        "size": "32GB",
+        "telstraDevice": true,
+        "autoLockCheck": false,
+        "color": "BLACK"
+      },
+      "assessmentType": {
+        "name": "validateIMEI"
+      },
+      "outcomes": [
+        {
+          "questionnaire": [
+            {
+              "question": "What is the screen condition",
+              "options": [
+                {
+                  "heading": "No cracks",
+                  "details": "device screen is free from cracks, chips or damaged."
+                },
+                {
+                  "heading": "Cracks",
+                  "details": "device screen is free from cracks, chips or damaged."
+                }
+              ]
+            },
+            {
+              "question": "describe the condition of body port and connector",
+              "options": [
+                {
+                  "heading": "As new",
+                  "details": "device screen is free from cracks, chips or damaged."
+                },
+                {
+                  "heading": "General wear and tear",
+                  "details": "device screen is free from cracks, chips or damaged."
+                },
+                {
+                  "heading": "damaged",
+                  "details": "device screen is free from cracks, chips or damaged."
+                }
+              ]
+            },
+            {
+              "question": "Is there any liquid damage ",
+              "options": [
+                {
+                  "heading": "No Liquid damage ",
+                  "details": "device screen is free from cracks, chips or damaged."
+                },
+                {
+                  "heading": "Liquid damage",
+                  "details": "device screen is free from cracks, chips or damaged."
+                }
+              ]
+            }
+          ],
+          "success": true,
+          "characteristics": [
+            {
+              "name": "caseId",
+              "value": "DCMMC0019661",
+              "valueType": "String"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

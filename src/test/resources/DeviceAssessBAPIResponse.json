@@ -1,0 +1,28 @@
+{
+  "statusCode": 200,
+  "time": "2022-07-27T07:30:15+10:00",
+  "deviceAssessment": [
+    {
+      "assessmentType": {
+        "name": "grading"
+      },
+      "outcomes": [
+        {
+          "success": true,
+          "characteristics": [
+            {
+              "name": "deviceAssessmentResult",
+              "value": "good",
+              "valueType": "String"
+            },
+            {
+              "name": "redemptionFee",
+              "value": "99.00",
+              "valueType": "Double"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

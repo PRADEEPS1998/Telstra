@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: p2o-service-intent-bff
+  mustache:
+      check-template-location: false
+  main:
+    allow-bean-definition-overriding: true
+

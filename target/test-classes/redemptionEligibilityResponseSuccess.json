@@ -1,0 +1,24 @@
+{
+  "externalId": "2342343464564",
+  "statusCode": 200,
+  "time": "2022-07-27T07:30:15+10:00",
+  "services": [
+    {
+      "businessContext": {
+        "family": "Mobile",
+        "type": "Hardware",
+        "subType": "Handset",
+        "businessAction": "redemptionEligibility",
+        "serviceId":"06218b9a-ae7e-11ed-afa1-0242ac120002"
+      },
+      "outcomes": [
+        {
+          "success": true,
+          "statusMessage":"Redemption is allowed",
+          "outcomeName": "redemptionHistory",
+          "outcomeResults": []
+        }
+      ]
+    }
+  ]
+}

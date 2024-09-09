@@ -1,0 +1,117 @@
+{
+  "externalId": "54e12a73-a23b-531c-cf25-1192c8f8adca",
+  "statusCode": "200",
+  "success": true,
+  "time": "2022-10-10T18:31:55+10:00",
+  "productGroup": [
+    {
+      "id": "fc1491d8-b89a-5e5a-9e3b-d04af4a6a040",
+      "@type": "productGroup",
+      "sourceSystem": "B2CFORCE",
+      "group": "Mobiles",
+      "brand": "Telstra",
+      "product": [
+        {
+          "id": "4f04b06c-809d-45c1-7f1f-031a3bd45511",
+          "status": "Active",
+          "startDate": "2020-12-01",
+          "productOffering": {
+            "id": "OFF_000014",
+            "name": "L Data pool",
+            "type": "PLAN",
+            "subtype": "STANDALONE"
+          },
+          "productCharacteristic": {
+            "dataTier": "150GB",
+            "paymentAgreementId": "966bb5f8-1464-4e7d-9e99-df1d0fa0db20",
+            "paymentMode": "Subscription",
+            "isDomesticExcessDataPolicy": true,
+            "cis": "https://www.telstra.com/help/critical-information-summaries/personal/mobile/telstra-trial-plans/telstra-exclusive-plans",
+            "recurringAmount": 80.00,
+            "simSerialNumber": "45676545676545"
+          },
+          "productRelationship": [
+            {
+              "type": "SERVICE",
+              "product": [
+                {
+                  "id": "3c027285-4972-961f-540f-10f5d7750f83",
+                  "status": "Active",
+                  "startDate": "2020-12-01",
+                  "productOffering": {
+                    "id": "PROD_000023",
+                    "name": "Mobile SIM",
+                    "type": "SERVICE",
+                    "subtype": "MOBILE"
+                  },
+                  "productCharacteristic": {
+                    "paymentAgreementId": "df489418-1077-4077-bf48-313e53c1b263",
+                    "serviceId": "61474870899",
+                    "addressId": "141442985",
+                    "directoryListingType": "Unlisted",
+                    "callLineIdentificationType": "Check Network",
+                    "simSerialNumber": "89610163331010649807"
+                  },
+                  "productRelationship": [
+                    {
+                      "type": "HARDWARE",
+                      "product": [
+                        {
+                          "id": "9b442034-6f1d-b4c2-efd7-1f88c019edec",
+                          "status": "Active",
+                          "startDate": "2020-12-01",
+                          "productOffering": {
+                            "id": "HANDSET_0012",
+                            "name": "Galaxy Note 9",
+                            "type": "HARDWARE",
+                            "subtype": "HANDSET"
+                          },
+                          "productCharacteristic": {
+                            "serialNumber": "274446654716780",
+                            "IMEI": "274446654716780",
+                            "brand": "Samsung",
+                            "SKU": "100154804",
+                            "storage": "128GB",
+                            "colour": "Midnight Black",
+                            "purchaseType": "REPAYMENT",
+                            "itemCondition": "New",
+                            "deviceName": "Samsung Galaxy Note9 Midnight Black 128GB"
+                          },
+                          "productRelationship": [
+                            {
+                              "type": "CONTRACT",
+                              "product": [
+                                {
+                                  "id": "d4a4d843-bd96-2bde-06d1-b44c71516755",
+                                  "status": "Active",
+                                  "startDate": "2020-12-01",
+                                  "productOffering": {
+                                    "id": "MDP_000001",
+                                    "name": "Device Repayment",
+                                    "type": "CONTRACT",
+                                    "subtype": "DPC"
+                                  },
+                                  "productCharacteristic": {
+                                    "paymentAgreementId": "d2036e33-7c0c-45b7-b19a-43e88d2edd86",
+                                    "numberOfRepayments": 24,
+                                    "repaymentAmount": 1512.0,
+                                    "recurringAmount": 63.00
+                                  },
+                                  "productRelationship": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

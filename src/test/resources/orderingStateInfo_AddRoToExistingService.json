@@ -1,0 +1,432 @@
+{
+  "_id": "421a5d4d-02bf-4637-98e3-ac3264c66cdf",
+  "omniChannel": true,
+  "repaymentOnly": false,
+  "outrightOnly": false,
+  "planOnly": false,
+  "flowAction": "add-ro-mobile",
+  "correlationId": "421a5d4d-02bf-4637-98e3-ac3264c66cde",
+  "flowName": "AddNew",
+  "channel": "self-serve",
+  "createdDateTime": "15-01-2024 07:18:32",
+  "updatedDateTime": "15-01-2024 07:18:37",
+  "effectiveRecurringTotal": 124.0,
+  "customerType": "Existing",
+  "cartId": "1ee04d336fae4bf3b895b0275c200464",
+  "airLock": true,
+  "hasAirLockSIM": false,
+  "hasAirLockDevice": false,
+  "retryCompleted": 0,
+  "emailRetryCompleted": 0,
+  "basketItems": [
+    "MOBILE_VOICE_SUBSCRIPTION",
+    "MOBILE_DEVICE"
+  ],
+  "contactUUID": "88f29b70-4455-8ae8-db75-c23454a6eca7",
+  "contactId": "0039h00000HTtnJAAT",
+  "isRepaymentOnly": false,
+  "isOutrightOnly": false,
+  "isPlanOnly": false,
+  "hasRepayment": true,
+  "hasOutright": false,
+  "hasPlan": false,
+  "hasDUP": false,
+  "isOmniChannel": true,
+  "productOrder": {
+    "effectiveUpfrontTotal": 0,
+    "effectiveRecurringTotal": 124,
+    "effectiveOneTimeTotal": 0,
+    "effectiveRecurringTotalAfterROs": 0,
+    "baseRecurringCharge": 0,
+    "baseOneTimeCharge": 0,
+    "minimumCost": 1552,
+    "loyaltyPoints": 0,
+    "PayToday": 124,
+    "is3DSQualified": false,
+    "monthlyPay": [
+      {
+        "month": "Months 1-5",
+        "price": 124
+      },
+      {
+        "month": "Months 6-11",
+        "price": 134
+      },
+      {
+        "month": "After That",
+        "price": 72
+      }
+    ],
+    "productOrderItems": [
+      {
+        "id": "0004200377",
+        "quantity": 0,
+        "productCode": "MSUBVOD-VMED-V02",
+        "productName": "Telstra Upfront Mobile Plan Essential",
+        "productFamily": "Mobiles",
+        "productType": "Subscription",
+        "productSubType": "VoiceData",
+        "skuVal": "",
+        "deviceName": "",
+        "storage": "",
+        "colour": "",
+        "brand": "Telstra",
+        "isServiceMigrated": false,
+        "deviceRepaymentTerm": "",
+        "deviceRepaymentAmount": 0,
+        "hardwarePurchaseType": "",
+        "effectiveUpfrontTotal": 0,
+        "effectiveRecurringTotal": 62,
+        "effectiveOneTimeTotal": 0,
+        "baseRecurringCharge": 72,
+        "baseOneTimeCharge": 0,
+        "stockStatus": "",
+        "cisLink": "https://www.telstra.com.au/help/critical-information-summaries/personal/mobile/mobile-plans/telstra-upfront-mobile-plans-2023",
+        "includedSpeed": "enhanced",
+        "includedData": "180GB",
+        "includedCalls": "Unlimited standard national calls and text within Australia",
+        "promotion": [
+          {
+            "promotionType": "Promotion",
+            "name": "Get $10 off",
+            "effectivityInMonths": 6,
+            "monthlySavings": 10.0,
+            "adjustedPrice": 62.0,
+            "originalPrice": 72.0,
+            "code": "PR-MSUBVOD-VMED-V02-$OFF25",
+            "adjustmentValue": 0
+          }
+        ],
+        "subscriptionSize": "M",
+        "simSerialNumber": "",
+        "hasCompanionPlan": false,
+        "exploreImageURL": "https://stage.telstra.com.au/String",
+        "airLock": false,
+        "repaymentProductCode": "MSUBVOD-VMED-V02",
+        "velocityCMTLineNumber": "0004",
+        "setId": "100",
+        "upfrontChargeIndicator": true,
+        "basketItemIdentifer": "1bdecee5-8c94-4945-ad38-60b84aecfa5b",
+        "segment": ""
+      },
+      {
+        "id": "0004200378",
+        "quantity": 0,
+        "productCode": "MHDWHST-S21P",
+        "productName": "Samsung Galaxy S21+ 5G",
+        "productFamily": "Mobiles",
+        "productType": "Hardware",
+        "productSubType": "Handset",
+        "skuVal": "100246883",
+        "deviceName": "Samsung Galaxy S21+ 5G",
+        "storage": "128GB",
+        "colour": "Phantom Silver",
+        "brand": "",
+        "isServiceMigrated": false,
+        "deviceRepaymentTerm": "12",
+        "deviceRepaymentAmount": 748,
+        "hardwarePurchaseType": "Repayment",
+        "effectiveUpfrontTotal": 0,
+        "effectiveRecurringTotal": 62,
+        "effectiveOneTimeTotal": 0,
+        "baseRecurringCharge": 62,
+        "baseOneTimeCharge": 0,
+        "stockStatus": "",
+        "cisLink": "",
+        "includedSpeed": "",
+        "includedData": "",
+        "includedCalls": "",
+        "promotion": [
+
+        ],
+        "simSerialNumber": "",
+        "deliveryMethod": "Hardware Supplied",
+        "hasCompanionPlan": false,
+        "exploreImageURL": "https://stage.telstra.com.au/String",
+        "airLock": true,
+        "repaymentProductCode": "MDP_000001",
+        "velocityCMTLineNumber": "0001",
+        "setId": "100",
+        "upfrontChargeIndicator": true,
+        "basketItemIdentifer": "f293cd8e-07ef-4ef3-9ae9-1a0282792a03",
+        "segment": ""
+      }
+    ]
+  },
+  "featureToggles": {
+    "enableStayConn": false,
+    "7StarStandard": true,
+    "couponcodes": true,
+    "enableLargeAccount": true,
+    "concession": false,
+    "enablePCFBraintreeIntegration": true,
+    "enableSAFECheckForIDV": true,
+    "enableFixed5gFlow": true,
+    "orderRemediationCaseCreation": true,
+    "multiAccountMVP2": true,
+    "enableMononymous": true,
+    "enableGlobalCartV2": true,
+    "roLineItemExpansion": true,
+    "enableHardStopLeoStarlinkForBusiness": true,
+    "internationalPassportAsPrimaryId": true,
+    "enableOutboundTMSales": true,
+    "8StarStandardForSMB": true,
+    "enableStrategicInvoice": true,
+    "anniversaryDateFromBalanceAPI": true,
+    "upfrontNBOWithLongerTerms": true,
+    "enablePaymentModuleUI": false,
+    "enableHardStopLeoStarlinkForPortIn": false,
+    "deliveryTypeDecisioning": false,
+    "payWithPoints": true,
+    "enableFetch$0Offer": false,
+    "enablePaymentPCF": false,
+    "bookDeliveryWithProofOfId": true,
+    "continueOnExistingChargeModel": true,
+    "enableESIMSoda": true,
+    "addRoToExistingService": true
+  },
+  "pageSequence": {
+    "isValidateSequence": true,
+    "pages": [
+      {
+        "sequence": 0,
+        "url": "/checkout/common/customer-intent",
+        "pageId": "0",
+        "stepper": "11",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 1,
+        "url": "/checkout/mobile/stay-connected",
+        "pageId": "1",
+        "stepper": "11",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 2,
+        "url": "/checkout/mobile/service-details",
+        "pageId": "2",
+        "stepper": "11",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 3,
+        "url": "/checkout/common/autopay",
+        "pageId": "3",
+        "stepper": "22",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 4,
+        "url": "/checkout/common/idv-page",
+        "pageId": "4",
+        "stepper": "33",
+        "isValidate": true,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 5,
+        "url": "/checkout/common/staff-discount",
+        "pageId": "14",
+        "stepper": "35",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 6,
+        "url": "/checkout/common/cart-summary",
+        "pageId": "5",
+        "stepper": "38",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 7,
+        "url": "/checkout/common/credit-assessment",
+        "pageId": "6",
+        "stepper": "44",
+        "isValidate": true,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 8,
+        "url": "/checkout/common/credit-nbo",
+        "pageId": "7",
+        "stepper": "55",
+        "isValidate": false,
+        "isValidateConditional": true
+      },
+      {
+        "sequence": 9,
+        "url": "/checkout/mobile/service-setup",
+        "pageId": "8",
+        "stepper": "55",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 10,
+        "url": "/checkout/common/delivery-page",
+        "pageId": "9",
+        "stepper": "60",
+        "isValidate": false,
+        "isValidateConditional": true
+      },
+      {
+        "sequence": 11,
+        "url": "/checkout/common/anniversary-alignment",
+        "pageId": "10",
+        "stepper": "66",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 12,
+        "url": "/checkout/common/review-order",
+        "pageId": "11",
+        "stepper": "77",
+        "isValidate": true,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 13,
+        "url": "/checkout/common/payment",
+        "pageId": "12",
+        "stepper": "88",
+        "isValidate": true,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 14,
+        "url": "/checkout/common/confirmation",
+        "pageId": "13",
+        "stepper": "100",
+        "isValidate": false,
+        "isValidateConditional": false
+      }
+    ],
+    "flowTransactions": [
+      {
+        "id": "fraud-assessment",
+        "isValidate": true
+      }
+    ]
+  },
+  "abnAcnRetryCompleted": 0,
+  "sendOtpRetryCompleted": 0,
+  "verifyOtpRetryCompleted": 0,
+  "sqResult": {
+    "isSubsequentInstall": "No",
+    "activeServices": 0
+  },
+  "fixedServices": {
+    "isPAFlow": false,
+    "scenario": "Add New",
+    "subScenario": "Add New",
+    "coatType": "None",
+    "accessTransferType": "Add New",
+    "displayPortInOption": "Yes",
+    "serialNumberTransferType": "New",
+    "isAccessTransfer": "No",
+    "segment": ""
+  },
+  "authUserId": "a9aab108-c7c7-49b5-a49c-0a0fa0e195d2",
+  "doSCToDUPCarryOver": false,
+  "orderReferenceNumber": "A24091523168785",
+  "associatedAccounts": [
+    {
+      "accountUUID": "174db198-4b94-27f0-b314-19917473f5b6",
+      "cac": "5001149509",
+      "accountType": "individual",
+      "role": "Account Owner",
+      "repaymentEstablished": true,
+      "subscriptionEstablished": true,
+      "accountEstablished": true,
+      "isPrimary": true,
+      "status": "Acquired",
+      "sfAccountId": "0019h00000FzpbNAAR",
+      "priorityAssist": "No"
+    },
+    {
+      "accountUUID": "fd90c66c-c1cc-6cde-b99b-705c8b6f9e43",
+      "cac": "5001100132",
+      "accountType": "Organisation",
+      "role": "Account Owner",
+      "repaymentEstablished": true,
+      "subscriptionEstablished": true,
+      "accountEstablished": true,
+      "status": "Acquired",
+      "sfAccountId": "0019h00000FWpJhAAL",
+      "acn": "987654323",
+      "priorityAssist": "No"
+    }
+  ],
+  "contactADBORID": "266459883",
+  "fieldsToEnrich": [
+    {
+      "orderItemNumber": "0004200371",
+      "attributes": [
+        {
+          "valueType": "",
+          "name": "ATTR_PA_SIMC",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "associatedServices": [
+    {
+      "serviceId": "61474909345"
+    }
+  ],
+  "accountStatus": "Acquired",
+  "accountType": "Residential",
+  "accountUUID": "174db198-4b94-27f0-b314-19917473f5b6",
+  "cac": "5001149509",
+  "cartActionCodes": [
+  ],
+  "contactRole": "Account Owner",
+  "selectedService": {
+    "serviceId": "61474909345",
+    "assetReferenceId": "c537d866-9836-25b7-e7c6-8d41e85043be",
+    "sourceSystem": "B2CFORCE",
+    "paymentMode": "Subscription",
+    "serviceOutcome": "REDIRECT_TO_MYT"
+  },
+  "bapiEligibilityResult": {
+    "status": "Partial Success",
+    "ineligibleActions": [
+      {
+        "action": "ADD_RO",
+        "family": "Mobile"
+      }
+    ]
+  },
+  "globalCartMessageCode": "",
+  "nboPromotions": [
+    {
+      "productId": "0004200377",
+      "productCode": "MSUBVOD-VMED-V02",
+      "selectedPromo": "true",
+      "productName": "Telstra Upfront Mobile Plan Essential",
+      "productFamily": "Mobiles",
+      "productType": "Subscription",
+      "name": "Get $10 off",
+      "code": "PR-MSUBVOD-VMED-V02-$OFF25",
+      "visibility": "Public"
+    }
+  ],
+  "accountEstablished": true,
+  "isAccountEstablished": true,
+  "isRepaymentEstablished": true,
+  "isSubscriptionEstablised": true,
+  "repaymentEstablished": true,
+  "skipCustomerRiskCallout": true,
+  "subscriptionEstablised": true,
+  "couponAttemptCounter": 0,
+  "isAddNewAccountFlow": false
+}

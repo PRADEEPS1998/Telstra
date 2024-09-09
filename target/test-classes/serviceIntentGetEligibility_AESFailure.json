@@ -1,0 +1,26 @@
+{
+  "externalId": "2342343464564",
+  "statusCode": 424,
+  "time": "2023-03-01T23:49:14.034+0000",
+  "services": [
+    {
+      "businessContext": {
+        "family": "General",
+        "type": "Hardware",
+        "subType": "StreamingDevices",
+        "serviceId":"testServiceId"
+      },
+      "outcomes": [
+        {
+          "success": false,
+          "error": {
+            "errorCode": "1006",
+            "errorMessage": "AES API Error"
+          },
+          "statusMessage": "",
+          "outcomeName": "AESEligibility"
+        }
+      ]
+    }
+  ]
+}

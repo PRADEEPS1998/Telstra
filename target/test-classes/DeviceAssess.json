@@ -1,0 +1,46 @@
+{
+  "serviceId": "6423456767",
+  "relatedParty": [
+    {
+      "id": "70da6e89-2600-e724-0c3a-14aa4ef7777c",
+      "role": "Account",
+      "@type": "RelatedParty",
+      "@referredType": "Individual"
+    }
+  ],
+  "deviceAssessment": [
+    {
+      "assessmentType": {
+        "name": "grading"
+      },
+      "characteristics": [
+        {
+          "name": "caseId",
+          "value": "DCMMC0019661",
+          "valueType": "String"
+        }
+      ],
+      "deviceDetails": {
+        "deviceCondition" : [
+          {
+            "name": "liquidDamage",
+            "value": "no",
+            "valueType": "String"
+          },
+          {
+            "name": "screenDamage",
+            "value": "yes",
+            "valueType": "String"
+          },
+          {
+            "name": "bodyDamage",
+            "value": "no",
+            "valueType": "String"
+          }
+        ]
+
+      }
+
+    }
+  ]
+}

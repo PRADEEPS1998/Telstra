@@ -1,0 +1,22 @@
+{
+  "statusCode": 200,
+  "success":true,
+  "data" : {
+    "assessmentResult" : "DAMAGED",
+    "redemptionFee" : "249.00",
+    "deviceAssessedFor": {
+      "screenCondition": "CRACKS",
+      "bodyCondition": "DAMAGED",
+      "liquidCondition": "LIQUID_DAMAGE"
+    },
+    "deviceDetails" : {
+
+      "name": "iPhone X Black 64GB",
+
+      "recurringAmount": "81.25"
+
+    }
+
+
+  }
+}

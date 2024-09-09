@@ -1,0 +1,68 @@
+survey:
+  ApplicationAccessibleOverInternet:
+    answer: Private/EDN
+    profile: NA
+  ApplicationDescription:
+    answer: P2O MICROSERVICES
+    profile: NA
+  ApplicationName:
+    answer: p2o-service-intent-bff
+    profile: NA
+  BAU:
+    answer: Business to Customer (B2C)
+    profile: NA
+  BusinessCritical:
+    answer: false
+    profile: NA
+  BusinessRiskConsequence:
+    answer: Minor
+    profile: NA
+  ClairScanner:
+    answer: false
+    profile: NA
+  CoverityScanner:
+    answer: true
+    profile: NA
+  DoesPIA:
+    answer: false
+    profile: NA
+  HawkeyeScanner:
+    answer: false
+    profile: NA
+  InformationClassification:
+    answer: Internal
+    profile: NA
+  LegacySystems:
+    answer: false
+    profile: NA
+  ProjectName:
+    answer: Hellions-p2o-service-intent-bff
+    profile: NA
+  SonarQubeScanner:
+    answer: true
+    profile: NA
+  SourceClear:
+    answer: true
+    profile: NA
+  SourceClearWorkspaceName:
+    answer: P2O-APIS
+    profile: NA
+  TargetPlatform:
+    answer: PCF
+    profile: NA
+  TeamGroupEmail:
+    answer: teamhellions@team.telstra.com
+    profile: NA
+  TeamLeadEmail:
+    answer: Ramu.Nallamalli@team.telstra.com
+    profile: NA
+  TeamName:
+    answer: P2O-APIS
+    profile: NA
+  TelstraRetailOrWholesaleUse:
+    answer: Retail
+    profile: NA
+  UsesDockerImages:
+    answer: false
+    profile: NA
+version: v1.0

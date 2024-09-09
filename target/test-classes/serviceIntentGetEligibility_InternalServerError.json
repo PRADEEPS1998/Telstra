@@ -1,0 +1,8 @@
+{
+  "statusCode": 500,
+  "time": "2023-03-01T23:49:14.034+0000",
+  "error": {
+    "errorCode": "GENERIC_ERROR",
+    "errorMessage": "Internal Server Error"
+  }
+}

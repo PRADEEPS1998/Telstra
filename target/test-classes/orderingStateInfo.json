@@ -1,0 +1,62 @@
+{
+  "correlationId": "54e12a73-a23b-531c-cf25-1192c8f8adca",
+  "hasPlan": true,
+  "hasRepayment": false,
+  "hasOutright": true,
+  "hasDUP": true,
+  "selectedService": {
+    "serviceOutcome": "SERVICE_MIGRATION",
+    "assetReferenceId": "605bdb15-xxx-c-a83ea4d97a23"
+  },
+  "productOrder": {
+    "productOrderItems": [
+      {
+        "productType": "Subscription",
+        "productName": "Xyz",
+        "productFamily": "Mobiles"
+      },
+      {
+        "productType": "Something else",
+        "productName": "Something"
+      }
+    ]
+  },
+  "featureToggles": {
+    "enableStayConn": false,
+    "7StarStandard": true,
+    "couponcodes": true,
+    "enableLargeAccount": true,
+    "concession": false,
+    "enablePCFBraintreeIntegration": true,
+    "enableSAFECheckForIDV": true,
+    "enableFixed5gFlow": true,
+    "orderRemediationCaseCreation": true,
+    "multiAccountMVP2": true,
+    "enableMononymous": true,
+    "enableGlobalCartV2": true,
+    "roLineItemExpansion": true,
+    "enableHardStopLeoStarlinkForBusiness": true,
+    "internationalPassportAsPrimaryId": true,
+    "enableOutboundTMSales": true,
+    "8StarStandardForSMB": true,
+    "enableStrategicInvoice": true,
+    "anniversaryDateFromBalanceAPI": true,
+    "upfrontNBOWithLongerTerms": true,
+    "enablePaymentModuleUI": false,
+    "enableHardStopLeoStarlinkForPortIn": false,
+    "deliveryTypeDecisioning": false,
+    "payWithPoints": true,
+    "enableFetch$0Offer": false,
+    "enablePaymentPCF": false,
+    "bookDeliveryWithProofOfId": true,
+    "continueOnExistingChargeModel": true,
+    "enableESIMSoda": true,
+    "addRoToExistingService": true
+  },
+  "cartActionCodes": [{
+    "actionCode": "some code",
+    "productOrderItemId": "some id",
+    "actionType": "some type",
+    "promoCode": "some promo"
+  }]
+}

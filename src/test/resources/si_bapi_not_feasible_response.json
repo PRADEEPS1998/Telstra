@@ -1,0 +1,126 @@
+{
+  "externalId": "d766768b-a23b-531c-cf25-1192c8f8adcj",
+  "statusCode": "200",
+  "time": "2023-03-14T05:37:48.225651",
+  "SMFeasibilityEligibilityDetails": {
+    "feasibilityOutcome": {
+      "success": true,
+      "feasibilityStatus": "NO",
+      "customerId": "2022059742",
+      "isTON": "Yes",
+      "directoryListingIndicator": "Unlisted",
+      "callingLineIdentificationType": "Show my number",
+      "BillingAccountId": "2097264859731",
+      "messageBankType": "MessageBank Plus",
+      "simSerialNumber": "89610163317686206318",
+      "errors": {},
+      "reason": "SERVICE_INACTIVE",
+      "characteristic": [
+        {
+          "name": null,
+          "value": null,
+          "valueType": null
+        }
+      ]
+    },
+    "etcOutcome": {
+      "success": true,
+      "deviceDetails": [
+        {
+          "repaymentRetailTotal": null,
+          "sku": null,
+          "deviceName": null,
+          "noOfPayments": null,
+          "deviceBasePrice": null,
+          "salesChannel": null,
+          "remainingPayoutAmount": "20.91",
+          "brand": null,
+          "storage": null,
+          "color": null,
+          "installmentsCompleted": null,
+          "contractPeriod": "730Days",
+          "PaymentInstallments": null
+        },
+        {
+          "repaymentRetailTotal": null,
+          "sku": null,
+          "deviceName": null,
+          "noOfPayments": null,
+          "deviceBasePrice": null,
+          "salesChannel": null,
+          "remainingPayoutAmount": "29.91",
+          "brand": null,
+          "storage": null,
+          "color": null,
+          "installmentsCompleted": null,
+          "contractPeriod": "730Days",
+          "PaymentInstallments": null
+        },
+        {
+          "repaymentRetailTotal": "1599.00",
+          "sku": "10000010",
+          "deviceName": "Samsung Galaxy A52s 128GB 5G Black",
+          "noOfPayments": "36",
+          "deviceBasePrice": "30.00",
+          "salesChannel": "Dealer",
+          "remainingPayoutAmount": "1593.290",
+          "brand": "SAMSUNG",
+          "storage": "128GB",
+          "color": "Black",
+          "installmentsCompleted": "6",
+          "contractPeriod": "729Days",
+          "PaymentInstallments": "36"
+        },
+        {
+          "repaymentRetailTotal": "1599.00",
+          "sku": "10000010",
+          "deviceName": "Samsung Galaxy A52s 128GB 5G Black",
+          "noOfPayments": "36",
+          "deviceBasePrice": "30.00",
+          "salesChannel": "Dealer",
+          "remainingPayoutAmount": "1593.290",
+          "brand": "SAMSUNG",
+          "storage": "128GB",
+          "color": "Black",
+          "installmentsCompleted": "6",
+          "contractPeriod": "729Days",
+          "PaymentInstallments": "36"
+        }
+      ],
+      "accountNumber": "2022059742",
+      "serviceid": "0474884507",
+      "serviceType": "Mobile",
+      "etcsAmount": {
+        "planETC": "20.91",
+        "deviceETC": "0.0",
+        "otherETC": "0.0",
+        "totalETC": "20.91",
+        "unknownETC": "0.0"
+      },
+      "hasETC": true,
+      "isCIMTransferRODevice": true,
+      "errors": {},
+      "characteristic": [
+        {
+          "name": null,
+          "value": null,
+          "valueType": null
+        }
+      ]
+    },
+    "eligibilityOutcom": {
+      "success": true,
+      "eligibilityStatus": "Eligible",
+      "agoraDeepLink": "https://uat-checkout.telstra.com.au/small-business/mobile/autht/upgrade?businessContext=dvm&device=100246458&repay=24&serviceId=XXXXXXX507",
+      "isAddOnFound": true,
+      "errors": {},
+      "characteristic": [
+        {
+          "name": null,
+          "value": null,
+          "valueType": null
+        }
+      ]
+    }
+  }
+}

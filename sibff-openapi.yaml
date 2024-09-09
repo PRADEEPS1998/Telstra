@@ -1,0 +1,269 @@
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+- url: https://p2o-service-intent-bff-dev.apps.np.sdppcf.com/v1/p2o-app/service-details
+  description: Generated server url
+paths:
+  /get-streaming-service-intent-details:
+    post:
+      tags:
+      - service-intent-bff-controller
+      operationId: getStreamingServiceIntentDetails
+      parameters:
+      - name: X-Correlation-Id
+        in: header
+        required: true
+        schema:
+          type: string
+      - name: X-Microtoken
+        in: header
+        required: true
+        schema:
+          type: string
+      - name: X-Channel
+        in: header
+        required: true
+        schema:
+          type: string
+      - name: X-Source-System
+        in: header
+        required: true
+        schema:
+          type: string
+      - name: X-Flow-Name
+        in: header
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GetSIPayload'
+        required: true
+      responses:
+        "401":
+          description: Unauthorized
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/SIBFFErrorResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/SIBFFErrorResponse'
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/SIBFFErrorResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/SIBFFErrorResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIBFFResponse'
+  /get-service-details:
+    post:
+      tags:
+      - service-intent-bff-controller
+      operationId: getMobileServiceIntentDetails
+      parameters:
+      - name: X-Correlation-Id
+        in: header
+        required: true
+        schema:
+          type: string
+      - name: X-Microtoken
+        in: header
+        required: true
+        schema:
+          type: string
+      - name: X-Channel
+        in: header
+        required: false
+        schema:
+          type: string
+      - name: X-Source-System
+        in: header
+        required: false
+        schema:
+          type: string
+      - name: X-Flow-Name
+        in: header
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GetSIPayload'
+        required: true
+      responses:
+        "401":
+          description: Unauthorized
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/SIBFFErrorResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/SIBFFErrorResponse'
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/SIBFFErrorResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/SIBFFErrorResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIBFFResponse'
+components:
+  schemas:
+    SIBFFError:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+    SIBFFErrorResponse:
+      type: object
+      properties:
+        statusCode:
+          type: integer
+          format: int32
+        success:
+          type: boolean
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/SIBFFError'
+    GetSIPayload:
+      type: object
+      properties:
+        serviceId:
+          type: string
+        accountUUID:
+          type: string
+    Data:
+      type: object
+      properties:
+        isNewDeviceAllowed:
+          type: boolean
+    DeviceDetails:
+      type: object
+      properties:
+        PaymentInstallments:
+          type: string
+        repaymentRetailTotal:
+          type: string
+        sku:
+          type: string
+        deviceName:
+          type: string
+        noOfPayments:
+          type: string
+        deviceBasePrice:
+          type: string
+        salesChannel:
+          type: string
+        remainingPayoutAmount:
+          type: string
+        brand:
+          type: string
+        storage:
+          type: string
+        color:
+          type: string
+    ETCDetails:
+      type: object
+      properties:
+        hasETC:
+          type: boolean
+        isCIMTransferRODevice:
+          type: boolean
+        etcsAmount:
+          $ref: '#/components/schemas/ETCSAmount'
+        deviceDetails:
+          type: array
+          items:
+            $ref: '#/components/schemas/DeviceDetails'
+    ETCSAmount:
+      type: object
+      properties:
+        planETC:
+          type: string
+        deviceETC:
+          type: string
+        totalETC:
+          type: string
+    ExistingPlanDetails:
+      type: object
+      properties:
+        planName:
+          type: string
+        isROLinked:
+          type: boolean
+        deviceName:
+          type: string
+        sourceSystem:
+          type: string
+        hasDUP:
+          type: boolean
+        isPrepaidService:
+          type: boolean
+    SIBFFResponse:
+      type: object
+      properties:
+        statusCode:
+          type: string
+        success:
+          type: boolean
+        time:
+          type: string
+        action:
+          type: string
+        existingPlanDetails:
+          $ref: '#/components/schemas/ExistingPlanDetails'
+        selectedPlanDetails:
+          $ref: '#/components/schemas/SelectedPlanDetails'
+        isFeasibleEligibleAndETCSuccess:
+          type: boolean
+        agoraDeepLink:
+          type: string
+        isTONAvailable:
+          type: boolean
+        etcDetails:
+          $ref: '#/components/schemas/ETCDetails'
+        data:
+          $ref: '#/components/schemas/Data'
+    SelectedPlanDetails:
+      type: object
+      properties:
+        planName:
+          type: string

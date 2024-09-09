@@ -1,0 +1,11 @@
+{
+  "externalId": "d766768b-3828-59f1-e495-39d8a4488ec4",
+  "statusCode": "404",
+  "time": "2022-07-27T07:30:15+10:00",
+  "errors": [
+    {
+      "code": "NOT_FOUND",
+      "message": "The Resource Cannot be found"
+    }
+  ]
+}

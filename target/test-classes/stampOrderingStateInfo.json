@@ -1,0 +1,88 @@
+{
+  "correlationId": "54e12a73-a23b-531c-cf25-1192c8f8adca",
+  "hasPlan": true,
+  "hasRepayment": false,
+  "hasOutright": true,
+  "hasDUP": true,
+  "selectedService": {
+    "serviceOutcome": "SERVICE_MIGRATION"
+  },
+  "productOrder": {
+    "productOrderItems": [
+      {
+        "productType": "Subscription",
+        "productName": "Xyz",
+        "productFamily": "Mobiles"
+      },
+      {
+        "productType": "Something else",
+        "productName": "Something"
+      }
+    ]
+  },
+  "featureToggles": {
+    "enableStayConn": false,
+    "7StarStandard": true,
+    "couponcodes": true,
+    "enableLargeAccount": true,
+    "concession": false,
+    "enablePCFBraintreeIntegration": true,
+    "enableSAFECheckForIDV": true,
+    "enableFixed5gFlow": true,
+    "orderRemediationCaseCreation": true,
+    "multiAccountMVP2": true,
+    "enableMononymous": true,
+    "enableGlobalCartV2": true,
+    "roLineItemExpansion": true,
+    "enableHardStopLeoStarlinkForBusiness": true,
+    "internationalPassportAsPrimaryId": true,
+    "enableOutboundTMSales": true,
+    "8StarStandardForSMB": true,
+    "enableStrategicInvoice": true,
+    "anniversaryDateFromBalanceAPI": true,
+    "upfrontNBOWithLongerTerms": true,
+    "enablePaymentModuleUI": false,
+    "enableHardStopLeoStarlinkForPortIn": false,
+    "deliveryTypeDecisioning": false,
+    "payWithPoints": true,
+    "enableFetch$0Offer": false,
+    "enablePaymentPCF": false,
+    "bookDeliveryWithProofOfId": true,
+    "continueOnExistingChargeModel": true,
+    "enableESIMSoda": true,
+    "addRoToExistingService": true
+  },
+  "cartActionCodes": [{
+    "actionCode": "some code",
+    "productOrderItemId": "some id",
+    "actionType": "some type",
+    "promoCode": "some promo"
+  }]
+,"selectedService": {
+  "serviceId": "61358566881",
+  "sourceSystem": "MICA",
+  "paymentMode": "Subscription",
+  "serviceOutcome": "SERVICE_MIGRATION",
+  "assetReferenceId": "adfsd-dfsfsd-dsfaf"
+},
+  "redemptionDeviceDetails":{
+    "deviceName":"iPhone X Black 64GB",
+    "recurringAmount":"81.25",
+    "caseId":"DCMMC0019661",
+    "repaymentOptions": [
+      {
+        "assetReferenceId": "4b749f80-156f-e047-cdd5-6c16c65877b3",
+        "status": "ACTIVE",
+        "totalInstallments": "24",
+        "installmentsCompleted": "3",
+        "installmentsLeft": "11",
+        "deviceName": "iPhone X Black 64GB",
+        "chargePointId": "4b749f80-156f-e047-cdd5-6c16c65877b3",
+        "monthlyRoAmount": "81.25",
+        "remainingPayoutAmount": "1706.25",
+        "retailPrice": "2200"
+      }
+    ]
+
+  }
+}

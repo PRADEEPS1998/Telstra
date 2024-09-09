@@ -1,0 +1,30 @@
+{
+  "correlationId": "54e12a73-a23b-531c-cf25-1192c8f8adca",
+  "hasPlan": true,
+  "hasRepayment": false,
+  "hasOutright": true,
+  "hasDUP": true,
+  "selectedService": {
+    "serviceId" : "06218b9a-ae7e-11ed-afa1-0242ac120000-1",
+    "serviceOutcome": "SERVICE_MIGRATION"
+  },
+  "productOrder": {
+    "productOrderItems": [
+      {
+        "productType": "Subscription",
+        "productName": "Xyz",
+        "productFamily": "Mobiles"
+      },
+      {
+        "productType": "Something else",
+        "productName": "Something"
+      }
+    ]
+  },
+  "cartActionCodes": [{
+    "actionCode": "some code",
+    "productOrderItemId": "some id",
+    "actionType": "some type",
+    "promoCode": "some promo"
+  }]
+}

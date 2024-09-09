@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <mirrors>
+        <mirror>
+            <!--This sends everything to our internal repo -->
+            <id>telstra-repository</id>
+            <url>https://repo.tools.telstra.com/repository/maven-public/</url>
+            <mirrorOf>external:*</mirrorOf>
+        </mirror>
+    </mirrors>
+    <servers>
+        <server>
+            <id>b2c-p2o-apis-common-release</id>
+            <configuration>
+                <httpHeaders>
+                    <property>
+                        <name>Authorization</name>
+                        <value>Basic ${env.nexus_base64_password}</value>
+                    </property>
+                </httpHeaders>
+            </configuration>
+            <username>${env.nexus_user_token}</username>
+            <password>${env.nexus_password}</password>
+        </server>
+        <server>
+            <id>b2c-p2o-apis-common-snapshot</id>
+            <configuration>
+                <httpHeaders>
+                    <property>
+                        <name>Authorization</name>
+                        <value>Basic ${env.nexus_base64_password}</value>
+                    </property>
+                </httpHeaders>
+            </configuration>
+            <username>${env.nexus_user_token}</username>
+            <password>${env.nexus_password}</password>
+        </server>
+    </servers>
+    <profiles>
+        <profile>
+            <id>nexus</id>
+            <repositories>
+                <repository>
+                    <id>telstra-repository</id>
+                    <url>https://repo.tools.telstra.com/repository/maven-public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>b2c-p2o-apis-common-repository</id>
+                    <url>https://repo.tools.telstra.com/repository/b2c-p2o-apis-common-release/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <!--make the profile active all the time -->
+        <activeProfile>nexus</activeProfile>
+    </activeProfiles>
+</settings>

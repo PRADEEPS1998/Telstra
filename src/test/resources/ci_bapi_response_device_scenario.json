@@ -1,0 +1,96 @@
+{
+  "externalId": "08520e2b-224e-4eed-aa63-c729e2b72e00",
+  "statusCode": 200,
+  "success": true,
+  "time": "2023-07-24T06:08:56.370Z",
+  "productGroup": [
+    {
+      "id": "669a9acd-0535-f959-635f-627f86f510aa",
+      "@type": "productGroup",
+      "sourceSystem": "B2CFORCE",
+      "group": "Mobiles",
+      "brand": "Telstra",
+      "product": [
+        {
+          "id": "06daa20e-1b8b-ebfd-ecac-6ca346e6e20e",
+          "status": "Active",
+          "startDate": "2021-10-18",
+          "productOffering": {
+            "id": "MSUBVOD-VLRG-V02",
+            "name": "Telstra Upfront Mobile Plan Premium",
+            "type": "PLAN",
+            "subtype": "STANDALONE"
+          },
+          "productCharacteristic": {
+            "dataTier": "40GB",
+            "paymentAgreementId": "06daa20e-1b8b-ebfd-ecac-6ca346e6e20e",
+            "brand": "Telstra",
+            "paymentMode": "Subscription",
+            "isDomesticExcessDataPolicy": true,
+            "cis": "https://www.telstra.com.au/help/critical-information-summaries/personal/mobile/mobile-plans/telstra-upfront-mobile-plans",
+            "networkAccess": "5G"
+          },
+          "productRelationship": [
+            {
+              "type": "SERVICE",
+              "product": [
+                {
+                  "id": "fe645f54-35ae-5906-529c-e5a727f224ff",
+                  "status": "Active",
+                  "startDate": "2021-10-18",
+                  "productOffering": {
+                    "id": "MSVCVOD-SRVC",
+                    "name": "Mobile Service",
+                    "type": "SERVICE",
+                    "subtype": "MOBILE"
+                  },
+                  "productCharacteristic": {
+                    "serviceId": "61436898898",
+                    "directoryListingType": "Unlisted",
+                    "callLineIdentificationType": "Check Network",
+                    "simSerialNumber": "8343566752263"
+                  },
+                  "productRelationship": [
+                    {
+                      "type": "ADDON",
+                      "product": [
+                        {
+                          "id": "fea9847a-3991-7c62-e993-14aa39987d17",
+                          "status": "Active",
+                          "startDate": "2021-10-18",
+                          "productOffering": {
+                            "id": "MBLTRDP-PASS",
+                            "name": "International Roaming Day Pass",
+                            "type": "ADDON",
+                            "subtype": "ROAMING_DAYPASS"
+                          },
+                          "productCharacteristic": {
+                            "paymentAgreementId": "a0a07701-e339-46d8-a3e7-5e3492ee4e7c"
+                          },
+                          "productRelationship": []
+                        },
+                        {
+                          "id": "7d541755-d341-a5ac-8676-fa9e61fd5ccd",
+                          "status": "Active",
+                          "startDate": "2021-10-18",
+                          "productOffering": {
+                            "id": "MBLTSPD-PROD",
+                            "name": "Mobile Speed",
+                            "type": "ADDON",
+                            "subtype": "SPEED_BOOST"
+                          },
+                          "productCharacteristic": {},
+                          "productRelationship": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

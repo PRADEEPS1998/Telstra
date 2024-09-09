@@ -1,0 +1,43 @@
+<configuration>
+
+    <appender name="mask" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="com.telstra.p2o.common.logging.StandardTelstraLayout">
+                <serviceName>p2o-service-intent-bff</serviceName>
+                <serviceVersion>0.0.44</serviceVersion>
+                <minimumPayloadLevel>20000</minimumPayloadLevel>
+                <!-- To disable ticketing remove the ticketing element -->
+                <ticketing class="com.telstra.p2o.common.ntet.service.TicketingService">
+                    <minimumLevel>0</minimumLevel> <!-- Minimum level of logging to be applied -->
+                    <tokenUrl>${apifirst.logger.ticketing.tokenUrl}</tokenUrl> <!-- OAuth token url -->
+                    <ticketUrl>${apifirst.logger.ticketing.ticketUrl}</ticketUrl> <!-- Ticket creation endpoint url -->
+                    <clientId>${apifirst.logger.ticketing.clientId}</clientId> <!-- OAuth clientId -->
+                    <secretId>${apifirst.logger.ticketing.secretId}</secretId> <!-- OAuth secretId -->
+                    <grantType>${apifirst.logger.ticketing.grantType}</grantType>  <!--OAuth Grant Type is not provided default is client_credentials  -->
+                </ticketing>
+                <maskTask class="com.telstra.p2o.common.logging.utils.MaskPIITaskEmail">
+                    <formatRegex>(^[^@]{3}|(?!^)\G)[^@]</formatRegex>  <!--formatRegex (Optional: default is "(^[^@]{3}|(?!^)\G)[^@]" ) -->
+                    <normalRegex>(^[^@]{2}|(?!^)\G)[^@]</normalRegex>  <!--normalRegex (Optional: default is:  "(^[^@]{2}|(?!^)\G)[^@]" ) -->
+                    <keywords>contactEmailAddress,Email,contactEmail</keywords> <!-- comma seperated list of keywords -->
+                </maskTask>
+                <maskTask class="com.telstra.p2o.common.logging.utils.MaskPIITaskOther">
+                    <formatRegex>(^[^@]{3}|(?!^)\G)[^@]</formatRegex>  <!--formatRegex (Optional: default is "(^[^@]{3}|(?!^)\G)[^@]" ) -->
+                    <normalRegex>(^[^@]{2}|(?!^)\G)[^@]</normalRegex>  <!--normalRegex (Optional: default is:  "(^[^@]{2}|(?!^)\G)[^@]" ) -->
+                    <keywords>HomePhone,Birthdate</keywords> <!-- comma seperated list of keywords -->
+                </maskTask>
+                <maskTask class="com.telstra.p2o.common.logging.utils.MaskPIITaskOther">
+                    <useMaskLength>5</useMaskLength> <!-- using maskLength -->
+                    <maskCharacter>*</maskCharacter> <!-- using maskCharacter -->
+                    <keywords>MobilePhone,DrivingLicense</keywords> <!-- comma seperated list of keywords -->
+                </maskTask>
+                <jsonFormatter
+                        class="com.telstra.p2o.common.logging.formatter.JsonFormatter">
+                    <prettyPrint>false</prettyPrint>
+                </jsonFormatter>
+            </layout>
+        </encoder>
+    </appender>
+    <root level="DEBUG">
+        <appender-ref ref="mask" />
+    </root>
+</configuration>

@@ -1,0 +1,75 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: p2o-service-intent-bff
+  title: P2O Service Intent BFF Microservice API
+  description: The core value of this solution is the ability to provide Service Intent BFF capabilities.
+  annotations:
+    gitlab.com/project-slug: p2o-decoupling/p2o-decoupling-bff/p2o-service-intent-bff
+    backstage.io/techdocs-ref: 'url:https://gitlab.tools.telstra.com/telstra/nit/tse/p2o/p2o-decoupling/p2o-decoupling-bff/p2o-service-intent-bff'
+    bamboo.atlassian.com/build-plan-key: ECYXNE-P2OSI
+    telstra.alfabetcloud.com/ability-app-id: P2O-EXPERIENCE
+    bamboo.atlassian.com/deployment-project-id: '503218266'
+    sonarqube.org/project-key: 'b2c-p2o-apis-bff-service-intent'
+    newrelic.com/account-id: '3652894'
+    #newrelic.com/application-name: 'p2o-service-intent-bff'
+    #newrelic.com/embedded-charts: '49eb8e54-f94a-44fb-bbbd-a0d1f4efc583'
+  tags:
+    - springboot
+    - java
+    - pcf
+    - redis
+  links:
+    - url: https://confluence.tools.telstra.com/display/SALP/Service+Intent+-+BFF+Tech+Design
+      title: Service Intent BFF API Technical Design
+      icon: forum
+    #- url: https://teamtelstra.sharepoint.com/:f:/r/sites/B2BDigitalTransformation-Digi-MS/Shared%20Documents/Digi-MS?csf=1&web=1&e=KqR5fl
+    #  title: Sharepoint
+    #  icon: videolibrary
+    #- url: https://web.microsoftstream.com/channel/bdac0e96-2ebe-4569-983e-5868d47751f5
+    #  title: Microsoft Stream Channel (Videos)
+    #  icon: videolibrary
+    #- url: https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI2NjI1NjM3MTcxMiJ9/all
+    #  title: Quarterback on Yammer
+    #  icon: group
+    #- url: https://onenr.io/0ZQWJNZn9jW
+    #  title: Backend Monitoring in NewRelic
+    #  icon: dashboard
+    - url: mailto:TeamBorealisMS@team.telstra.com
+      title: Email us
+      icon: chat
+    - url: https://confluence.tools.telstra.com/display/SALP/Team+Borealis
+      title: About Team
+      icon: group
+spec:
+  type: service
+  owner: P2O
+  system: p2o-service-intent-bff
+  lifecycle: production
+  providesApis:
+    - p2o-service-intent-bff
+  consumesApis:
+    - TBC
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: p2o-service-intent-bff
+  title: P2O Service Intent BFF Microservice API
+  description: The core value of this solution is the ability to provide Service Intent BFF capabilities.
+  tags:
+    - springboot
+    - java
+    - pcf
+    - redis
+  links:
+    - url: https://confluence.tools.telstra.com/display/SALP/Service+Intent+-+BFF+Tech+Design
+      title: Service Intent BFF API Technical Design
+      icon: forum
+spec:
+  type: openapi
+  lifecycle: production
+  system: p2o-service-intent-bff
+  owner: P2O
+  definition:
+    $text: "https://gitlab.tools.telstra.com/telstra/nit/tse/p2o/p2o-decoupling/p2o-decoupling-bff/p2o-service-intent-bff/-/blob/main/sibff-openapi.yaml"

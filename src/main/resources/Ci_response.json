@@ -1,0 +1,168 @@
+{
+  "externalId": "bdd41ef9-5db2-4622-9a8c-c65e8cf87ffe",
+  "statusCode": 200,
+  "success": true,
+  "time": "2024-01-04T11:47:17.291Z",
+  "productGroup": [
+    {
+      "id": "3618d513-347e-7db4-8ce4-9bc16e07db24",
+      "@type": "productGroup",
+      "sourceSystem": "B2CFORCE",
+      "group": "Mobiles",
+      "brand": "Telstra",
+      "product": [
+        {
+          "id": "800c92ef-55e0-c41f-c2ca-77cd82cb6431",
+          "status": "Active",
+          "startDate": "2023-03-21",
+          "productOffering": {
+            "id": "MSUBVOD-VMED-V02",
+            "name": "Telstra Upfront Mobile Plan Essential",
+            "type": "PLAN",
+            "subtype": "STANDALONE"
+          },
+          "productCharacteristic": {
+            "dataTier": "180GB",
+            "paymentAgreementId": "04ff5c65-0896-4331-83d0-f0be31fbe059",
+            "brand": "Telstra",
+            "paymentMode": "Subscription",
+            "isDomesticExcessDataPolicy": true,
+            "cis": "https://www.telstra.com.au/help/critical-information-summaries/personal/mobile-broadband/mobile-broadband-plans/telstra-upfront-data-plans",
+            "networkAccess": "5G",
+            "recurringAmount": 62.0
+          },
+          "productRelationship": [
+            {
+              "type": "SERVICE",
+              "product": [
+                {
+                  "id": "251920b3-7a23-a61a-7a82-bcbbebd47f90",
+                  "status": "Active",
+                  "startDate": "2023-03-21",
+                  "productOffering": {
+                    "id": "MSVCVOD-SRVC",
+                    "name": "Mobile Service",
+                    "type": "SERVICE",
+                    "subtype": "MOBILE"
+                  },
+                  "productCharacteristic": {
+                    "serviceId": "61475099229",
+                    "directoryListingType": "Unlisted",
+                    "callLineIdentificationType": "Check Network",
+                    "simSerialNumber": "8359693264899",
+                    "simCategory": "3G Standard SIM"
+                  },
+                  "productRelationship": [
+                    {
+                      "type": "ADDON",
+                      "product": [
+                        {
+                          "id": "1a586ba4-fec6-bf22-062e-c0532e678a87",
+                          "status": "Active",
+                          "startDate": "2023-03-21",
+                          "productOffering": {
+                            "id": "MBLTRDP-PASS",
+                            "name": "International Roaming Day Pass",
+                            "type": "ADDON",
+                            "subtype": "ROAMING_DAYPASS"
+                          },
+                          "productCharacteristic": {
+                            "paymentAgreementId": "0d518ddb-f099-4e15-8d6b-89753d6bd57b"
+                          },
+                          "productRelationship": []
+                        },
+                        {
+                          "id": "e48e6b0e-de31-24bc-9eca-20791ee0656c",
+                          "status": "Active",
+                          "startDate": "2023-03-21",
+                          "productOffering": {
+                            "id": "MBLTSPD-PROD",
+                            "name": "Mobile Speed",
+                            "type": "ADDON",
+                            "subtype": "SPEED_BOOST"
+                          },
+                          "productCharacteristic": {},
+                          "productRelationship": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "HARDWARE",
+                      "product": [
+                        {
+                          "id": "b1c43837-92ed-1733-8305-c7c5f392b4de",
+                          "status": "Active",
+                          "startDate": "2023-03-21",
+                          "productOffering": {
+                            "id": "MHDWHST-PXL5",
+                            "name": "Pixel 5",
+                            "type": "HARDWARE",
+                            "subtype": "HANDSET"
+                          },
+                          "productCharacteristic": {
+                            "deviceName": "Google Pixel 5 128GB Just Black",
+                            "brand": "Google",
+                            "purchaseType": "REPAYMENT",
+                            "colour": "Just Black",
+                            "serialNumber": "213867426598061",
+                            "storage": "128GB"
+                          },
+                          "productRelationship": [
+                            {
+                              "type": "ADDON",
+                              "product": [
+                                {
+                                  "id": "6c4b9ee5-9d08-0569-111c-1a857fea8ab9",
+                                  "status": "Active",
+                                  "startDate": "2023-03-21",
+                                  "productOffering": {
+                                    "id": "MBLTDAS-UPPR",
+                                    "name": "Upgrade & Protect",
+                                    "type": "ADDON",
+                                    "subtype": "DEVICE_ASSURANCE"
+                                  },
+                                  "productCharacteristic": {
+                                    "paymentAgreementId": "0ac004cc-3f82-4364-9054-07c278e63afd",
+                                    "cis": "https://www.telstra.com.au/help/critical-information-summaries/personal/mobile/upgrade-and-protect/upgrade-and-protect1",
+                                    "recurringAmount": 15
+                                  },
+                                  "productRelationship": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "CONTRACT",
+                              "product": [
+                                {
+                                  "id": "d10c8793-78ac-4247-7410-655c348e0e17",
+                                  "status": "Active",
+                                  "startDate": "2023-03-21",
+                                  "productOffering": {
+                                    "id": "MDP_000001",
+                                    "name": "Device Repayment",
+                                    "type": "CONTRACT",
+                                    "subtype": "DPC"
+                                  },
+                                  "productCharacteristic": {
+                                    "paymentAgreementId": "33ef6590-b763-4186-adeb-5e528bb83cd9",
+                                    "numberOfRepayments": 24,
+                                    "repaymentAmount": 998
+                                  },
+                                  "productRelationship": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

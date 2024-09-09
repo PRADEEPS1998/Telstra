@@ -1,0 +1,389 @@
+{
+  "_id": "1a67d548-2776-11ee-be56-0242ac120002",
+  "omniChannel": true,
+  "repaymentOnly": false,
+  "outrightOnly": false,
+  "planOnly": false,
+  "correlationId": "1a67d548-2776-11ee-be56-0242ac120002",
+  "flowName": "AddNew",
+  "channel": "self-serve",
+  "createdDateTime": "21-07-2023 03:27:39",
+  "updatedDateTime": "24-07-2023 06:05:59",
+  "effectiveRecurringTotal": 104.0,
+  "customerType": "Existing",
+  "cartId": "59029454cc1542dfb05486fb329f5d65",
+  "airLock": true,
+  "hasAirLockSIM": false,
+  "hasAirLockDevice": false,
+  "retryCompleted": 0,
+  "basketItems": [
+    "ACCESSORIES",
+    "MOBILE_VOICE_SUBSCRIPTION"
+  ],
+  "contactUUID": "388a6e6e-15cb-a637-2e04-3cfd78208a1e",
+  "contactId": "0032O00000JVyf6QAD",
+  "isRepaymentOnly": false,
+  "isOutrightOnly": false,
+  "isPlanOnly": false,
+  "hasRepayment": true,
+  "hasOutright": false,
+  "hasPlan": true,
+  "hasDUP": false,
+  "isOmniChannel": true,
+  "productOrder": {
+    "id": "G23211352443279",
+    "effectiveUpfrontTotal": 24,
+    "effectiveRecurringTotal": 104,
+    "effectiveOneTimeTotal": 0,
+    "effectiveRecurringTotalAfterROs": 80,
+    "baseRecurringCharge": 119,
+    "baseOneTimeCharge": 0,
+    "minimumCost": 378,
+    "CLI": "Show my number",
+    "loyaltyPoints": 0,
+    "PayToday": 24,
+    "monthlyPay": [
+      {
+        "month": "Months 2-12",
+        "price": 104
+      },
+      {
+        "month": "Months 13-13",
+        "price": 80
+      },
+      {
+        "month": "After that",
+        "price": 95
+      }
+    ],
+    "productOrderItems": [
+      {
+        "id": "0003167805",
+        "quantity": 1,
+        "productCode": "MSUBVOD-VLRG-V02",
+        "productName": "Telstra Upfront Mobile Plan Premium",
+        "productFamily": "Mobiles",
+        "productType": "Subscription",
+        "productSubType": "VoiceData",
+        "isServiceMigrated": false,
+        "deviceRepaymentAmount": 0,
+        "effectiveUpfrontTotal": 0,
+        "effectiveRecurringTotal": 80,
+        "effectiveOneTimeTotal": 0,
+        "baseRecurringCharge": 95,
+        "baseOneTimeCharge": 0,
+        "cisLink": "https://www.telstra.com.au/help/critical-information-summaries/personal/mobile/mobile-plans/telstra-upfront-mobile-plans-2023",
+        "includedSpeed": "enhanced",
+        "includedData": "300GB",
+        "promotion": [
+          {
+            "promotionType": "Discount",
+            "name": "Plan discount",
+            "effectivityInMonths": 12,
+            "monthlySavings": 15.0,
+            "adjustedPrice": 80.0,
+            "originalPrice": 95.0,
+            "adjustmentMethod": "Absolute",
+            "adjustmentValue": 0
+          }
+        ],
+        "subscriptionSize": "L",
+        "hasCompanionPlan": false,
+        "airLock": false,
+        "setId": "100",
+        "upfrontChargeIndicator": false
+      },
+      {
+        "id": "0003167809",
+        "quantity": 1,
+        "productCode": "GHDWHPH-BDSP",
+        "productName": "Galaxy Buds+",
+        "productFamily": "General",
+        "productType": "Hardware",
+        "productSubType": "Headphones",
+        "skuVal": "100160079",
+        "deviceName": "Galaxy Buds+ White",
+        "colour": "White",
+        "brand": "Samsung",
+        "isServiceMigrated": false,
+        "deviceRepaymentTerm": "12",
+        "deviceRepaymentAmount": 298,
+        "hardwarePurchaseType": "Repayment",
+        "effectiveUpfrontTotal": 0,
+        "effectiveRecurringTotal": 24,
+        "effectiveOneTimeTotal": 0,
+        "baseRecurringCharge": 24,
+        "baseOneTimeCharge": 0,
+        "cisLink": "null",
+        "hasCompanionPlan": false,
+        "airLock": false,
+        "setId": "300",
+        "upfrontChargeIndicator": false
+      }
+    ]
+  },
+  "featureToggles": {
+    "deliveryTypeDecisioning": false,
+    "enableStrategicInvoice": true,
+    "enableGlobalCartV2": true,
+    "roLineItemExpansion": true,
+    "concession": false,
+    "enablePCFBraintreeIntegration": false,
+    "multiAccountMVP2": true,
+    "upfrontNBOWithLongerTerms": true,
+    "enableESIMSoda": false
+  },
+  "pageSequence": {
+    "isValidateSequence": true,
+    "pages": [
+      {
+        "sequence": 0,
+        "url": "/checkout/common/customer-intent",
+        "pageId": "0",
+        "stepper": "11",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 1,
+        "url": "/checkout/mobile/service-details",
+        "pageId": "1",
+        "stepper": "11",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 2,
+        "url": "/checkout/common/autopay",
+        "pageId": "2",
+        "stepper": "22",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 3,
+        "url": "/checkout/common/idv-page",
+        "pageId": "3",
+        "stepper": "33",
+        "isValidate": true,
+        "isCompleted": true,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 4,
+        "url": "/checkout/common/staff-discount",
+        "pageId": "14",
+        "stepper": "35",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 5,
+        "url": "/checkout/common/cart-summary",
+        "pageId": "4",
+        "stepper": "38",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 6,
+        "url": "/checkout/common/credit-assessment",
+        "pageId": "5",
+        "stepper": "44",
+        "isValidate": true,
+        "isCompleted": true,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 7,
+        "url": "/checkout/common/credit-nbo",
+        "pageId": "6",
+        "stepper": "55",
+        "isValidate": false,
+        "isValidateConditional": true
+      },
+      {
+        "sequence": 8,
+        "url": "/checkout/mobile/service-setup",
+        "pageId": "7",
+        "stepper": "57",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 9,
+        "url": "/checkout/common/delivery-page",
+        "pageId": "8",
+        "stepper": "60",
+        "isValidate": true,
+        "isCompleted": true,
+        "isValidateConditional": true
+      },
+      {
+        "sequence": 10,
+        "url": "/checkout/common/anniversary-alignment",
+        "pageId": "9",
+        "stepper": "66",
+        "isValidate": false,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 11,
+        "url": "/checkout/common/review-order",
+        "pageId": "10",
+        "stepper": "77",
+        "isValidate": true,
+        "isCompleted": true,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 12,
+        "url": "/checkout/common/payment",
+        "pageId": "11",
+        "stepper": "88",
+        "isValidate": true,
+        "isValidateConditional": false
+      },
+      {
+        "sequence": 13,
+        "url": "/checkout/common/confirmation",
+        "pageId": "12",
+        "stepper": "100",
+        "isValidate": false,
+        "isValidateConditional": false
+      }
+    ],
+    "flowTransactions": [
+      {
+        "id": "fraud-assessment",
+        "isValidate": true,
+        "isCompletedFlag": true
+      }
+    ]
+  },
+  "abnAcnRetryCompleted": 0,
+  "sendOtpRetryCompleted": 0,
+  "verifyOtpRetryCompleted": 0,
+  "authUserId": "46c57ed6-27c7-4245-adf0-c0328ffe7ae3",
+  "orderReferenceNumber": "G23211352443279",
+  "fieldsToEnrich": [
+    {
+      "orderItemNumber": "0003167802",
+      "attributes": [
+        {
+          "valueType": "",
+          "name": "ATTR_PA_SIMC",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "associatedAccounts": [
+    {
+      "accountUUID": "4b39a1ae-9222-0c48-b20e-78a2ad5fbcce",
+      "cac": "5000546065",
+      "accountType": "individual",
+      "role": "Account Owner",
+      "repaymentEstablished": false,
+      "subscriptionEstablished": false,
+      "isPrimary": true,
+      "status": "Acquired"
+    }
+  ],
+  "contactADBORID": "143114062",
+  "accountStatus": "Acquired",
+  "accountType": "Residential",
+  "accountUUID": "4b39a1ae-9222-0c48-b20e-78a2ad5fbcce",
+  "cac": "5000546065",
+  "cartActionCodes": [],
+  "contactRole": "Account Owner",
+  "selectedService": {
+    "serviceId": "61436898898",
+    "assetReferenceId": "fe645f54-35ae-5906-529c-e5a727f224ff",
+    "sourceSystem": "B2CFORCE",
+    "paymentMode": "Subscription",
+    "serviceOutcome": "REDIRECT_TO_MYT"
+  },
+  "accountEstablished": false,
+  "isAccountEstablished": false,
+  "isRepaymentEstablished": false,
+  "isSubscriptionEstablised": false,
+  "repaymentEstablished": false,
+  "skipCustomerRiskCallout": true,
+  "subscriptionEstablised": false,
+  "globalCartMessageCode": "",
+  "nboPromotions": [
+    {
+      "productId": "0003167805",
+      "productCode": "MSUBVOD-VLRG-V02",
+      "selectedPromo": "true",
+      "productName": "Telstra Upfront Mobile Plan Premium",
+      "productFamily": "Mobiles",
+      "productType": "Subscription",
+      "name": "Get $15 off Premium Plan",
+      "code": "PR-MSUBVOD-VLRG-V02-$OFF43",
+      "visibility": "Public"
+    }
+  ],
+  "showCartSummary": false,
+  "selectedAnniversary": {
+    "day": "12",
+    "date": "2023-08-12",
+    "sourceSystem": "B2CFORCE"
+  },
+  "anniversaryAlignmentLabel": "ECOMM_AddNew_SFDC_PLAN_HRO_OD_NOT_AD",
+  "anniversaryDetails": [
+    {
+      "day": "12",
+      "date": "2023-08-12",
+      "sourceSystem": "B2CFORCE"
+    }
+  ],
+  "doPricing": false,
+  "chargeModel": "CIP",
+  "customerInfo": {
+    "ivParamSpec": "YdtZqm5/ZnPKvEmaeyuHkg==",
+    "data": "44jSHT7DgUFcg9HLxBMcVhCTUDk1OrdJr34/APrlW/JJGIy6lMMGI0AAL08AQ6vCaDKRM8tjQuvZsO7fIIl2lQl43FWsUG8BDw9/vYsrSrUWrjBsOI+3FvQLHJm6Wla2OQrD4KBqZdjoLwC72FgY9kBQ78I9bd/WwMJvmSSEIHE1gHbvFLjRssVpn6Rgssv//Gk7a+lswsFq+3WuJqpVbASdaBnEGTlimg4eCFZ7qpC5/Osn8AA9YSj/DjZ2eMKuQz5fHQyn4MG2Bb7WLeJ4IDIqoHhThuBA95HWJqXPFqlFh9HuoaHnooCt8lhVnkg5LORMf5p0P0LWvv3bzHFqnufDRhN6GJN2Ix98n35IFJV2b8mxpaWnJvh6yrA0iuj5M2mAwrT29wGIbuKTBNxgaSVc1JioygwfWbGdud3ZJkMC8LA+RvAxwgEj/YwQB/kt7nOxpuYAzK1o2YclvwovfJSLh2RsynKRhI4JyuUrCkUtBeXXjxpaWz7h77CKRnFyM/usRezxT8HeqkR/hGiPF8C5+RumZIFiqBu65cCn38HSyH5Me9S3yG3+Jsjb2uYouHRe+tX/iIUOSdGX2B3mX00WcTca8gyqdWuc4b0lRCk="
+  },
+  "identityDocumentVerificationCheckId": "324762051",
+  "reparentProcessed": true,
+  "deliveryItem": [
+    {
+      "orderItemId": "8022O000002LOLMQA4",
+      "productCode": "OFF_SIM001",
+      "skuVal": "100119211",
+      "productFamily": "Mobiles"
+    },
+    {
+      "orderItemId": "8022O000002LOLTQA4",
+      "productCode": "GHDWHPH-BDSP",
+      "skuVal": "100160079",
+      "productFamily": "General"
+    }
+  ],
+  "deliveryDetails": {
+    "productOrderItem": [
+      {
+        "deliveryContactRef": "1",
+        "deliveryLocationRef": "1",
+        "id": "8022O000002LOLMQA4",
+        "deliveryType": "Dispatch"
+      },
+      {
+        "deliveryContactRef": "1",
+        "deliveryLocationRef": "1",
+        "id": "8022O000002LOLTQA4",
+        "deliveryType": "Dispatch"
+      }
+    ],
+    "deliveryLocationInfo": {
+      "ivParamSpec": "u8L6OCszyx7ww1a2z0/UCQ==",
+      "data": "SEpw+RbdXd5cWjzKqXr2T9HjLEeEmHculbv1OSMThr+glFcIBDwLw6r3CLQH7GLYTHVy8o75fzrNZtoVUnpVHIyLAr7p+uBVznAc63fvJQwvzDaH8ITTc1Cf9cX6Xsdsd5+cqNqltue6/Kkxus5tMzhEGfVjARE53Glf5Ycf0ck9lrMQmB0/jFvUTdCNE7hJ"
+    },
+    "deliveryContactInfo": {
+      "ivParamSpec": "I0VaoT6pYu9ZvmRXE+kznQ==",
+      "data": "KvuZ4Yz9D4k7SiYxS8he38VTwDITRNNcHro9O+Z9E44OmqNrHyHtMyNNHm7zb4OHVPFk0pSERY9//FixUh0Dm67QUSgfD/theFNEyPGNoZAJF4InHJevBoS0rqhwMCEeAXFSOKqItFNlkO8+rmXfrzcqxhOniDG8oLbDfmwekRh4QCElsEsV5sVBKtuHeYC22fBFOVOXYfNcJqqRHuTpYUe1qtBZ41JcI1FJUh4KFziBqOE/6Bhi7hJmHdhbXIJB"
+    }
+  },
+  "fraudOutcome": "Accept"
+}

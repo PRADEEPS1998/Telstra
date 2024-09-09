@@ -1,0 +1,22 @@
+---
+applications:
+- name: p2o-service-intent-bff
+  memory: 1024M
+  instances: 2
+  routes:
+    - route: p2o-bff-prodb.massl.pr.sdppcf.com/v1/p2o-app/service-details
+  path: target/p2o-service-intent-bff-0.0.1-SNAPSHOT.jar
+  env:
+    newrelic.config.distributed_tracing.enabled: true
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }, memory_calculator: { stack_threads: 25 } }'
+    SPRING_PROFILES_ACTIVE: prodb
+    JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
+    TZ: Australia/Sydney
+    NEW_RELIC_TRANSACTION_EVENTS_CUSTOM_REQUEST_HEADERS: '[{"header_name": "X-Correlation-Id"}, {"header_name": "X-Source-System"}, {"header_name": "X-Channel"}, {"header_name": "X-Flow-Name"}, {"header_name": "X-Transaction-Stack"}]'
+  services:
+    - p2o-apis-config-server
+    - p2o-apis-prod-newrelic
+    - p2o-api-elasticache
+    - p2o-api-document-db
+    - massl-cred
+    - p2o-api-autoscaler

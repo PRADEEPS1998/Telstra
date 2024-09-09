@@ -1,0 +1,30 @@
+{
+  "externalId": "d766768b-3828-59f1-e495-39d8a4488ec4",
+  "statusCode": "200",
+  "time": "2022-07-27T07:30:15+10:00",
+  "getETCResponse":{
+    "accountUUID" : "987c3cdd-8889-3073-b036-05c66018eb4r",
+    "success" :"true",
+    "repaymentOptions" : [
+      {
+        "assetReferenceId": "4b749f80-156f-e047-cdd5-6c16c65877b3",
+        "status": "ACTIVE",
+        "totalInstallments":"24",
+        "installmentsCompleted":"3",
+        "installmentsLeft": "11",
+        "deviceName": "iPhone X Black 64GB",
+        "chargePointId": "4b749f80-156f-e047-cdd5-6c16c65877b3",
+        "monthlyRoAmount": "81.25",
+        "remainingPayoutAmount": "1706.25",
+        "retailPrice": "2200"
+      }
+    ],
+    "characteristic": [
+      {
+        "name": "String",
+        "value": "String",
+        "valueType": "String"
+      }
+    ]
+  }
+}

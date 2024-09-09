@@ -1,0 +1,74 @@
+server:
+  servlet:
+    context-path: /v1/p2o-app/service-details
+
+
+telstra:
+  p2o:
+    bapi:
+      url:
+        customerInformation: https://minerva-sfb2c-b2ctop2o-b2c.sv.telstra-cave.com/v1/customer-order-entry/customer-information/customer/products
+        smEligibilityDetails: https://p2o-service-intent-sqi.apps.np.sdppcf.com/v1/customer-order-entry/customer-information/service/getSMEligibilityDetails
+        serviceIntentGetEligibility: https://p2o-service-intent-sit.massl.np.sdppcf.com/v1/customer-order-entry/customer-information/service/getEligibility
+        getETC: https://minerva-sfb2c-b2ctop2o-b2c.sv.telstra-cave.com/v1/customer-order-entry/customer-information/service/getETC
+        serviceIntentDeviceAssessment: https://minerva-sfb2c-b2ctop2o-b2c.sv.telstra-cave.com/v1/customer-order-entry/customer-information/service/grading-device
+        deviceAssessment: https://minerva-sfb2c-b2ctop2o-b2c.sv.telstra-cave.com/v1/customer-order-entry/customer-information/service/grading-device
+
+micro:
+  token:
+    audience: p2o-microservice
+    issuer: okapi2.telstra-org003.slot2.b2c-services
+    jwks-static-flag: false
+    jwks-https-endpoint: https://slot2.org003.t-dev.corp.telstra.com/v1/okapi-microauth/keys?realm=b2c-services
+
+microtokenvalidator:
+  claims:
+    profiles:
+      - profile: customer_user_tdi_guid
+        required:
+          - b2c_uid
+        derived:
+          - userIdentity: b2c_uid
+      - profile: staff_user
+        required:
+          - staff_userid
+        derived:
+          - userIdentity: staff_userid
+
+
+
+#Multiple redis server with cache name
+redis:
+  cacheName:
+    service:
+      mapping: |
+        {
+          "p2o-api-elasticache": [
+            "orderingStateInfo"
+          ]
+        }
+  default:
+    service: p2o-api-elasticache
+  timeToLive:
+    in:
+      hours: 24
+
+documentdb:
+  service: p2o-api-document-db
+
+key-store: 111
+key-store-password: 111
+
+enableCacheKeyGeneration: false
+
+valid:
+  flow: retail, call-center
+
+p2o:
+  common:
+    request:
+      headers:
+        value: X-Flow-Name,X-Channel,X-Source-System
+crypto:
+  secure-key : 111
+  salt: 111

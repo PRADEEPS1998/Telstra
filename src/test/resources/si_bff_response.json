@@ -1,0 +1,41 @@
+{
+  "statusCode": "200",
+  "success": true,
+  "time": "2022-07-27T07:30:15+10:00",
+  "action": "CONTINUE",
+  "isFeasibleEligibleAndETCSuccess": true,
+  "isTONAvailable": false,
+  "BillingAcccountId": "",
+  "existingPlanDetails": {
+    "planName": "",
+    "isROLinked": true,
+    "deviceName": "",
+    "hasDUP": false,
+    "isPrepaidService": false
+  },
+  "selectedPlanDetails": {
+    "planName": "Telstra Upfront Data Plan Extra Small"
+  },
+  "etcDetails": {
+    "hasETC": true,
+    "isCIMTransferRODevice": true,
+    "deviceDetails": {
+      "paymentInstallments": "",
+      "repaymentRetailTotal": "",
+      "sku": "",
+      "deviceName": "",
+      "noOfPayments": "",
+      "deviceBasePrice": "",
+      "remainingPayoutAmount": "",
+      "brand": "",
+      "storage": "",
+      "color": ""
+    },
+    "etcsAmount": {
+      "planETC": "",
+      "deviceETC": "",
+      "otherETC": "",
+      "totalETC": ""
+    }
+  }
+}
